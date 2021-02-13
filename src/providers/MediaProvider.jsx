@@ -17,14 +17,14 @@ export const MediaProvider = ({
         if(term.length > 4){
             fetch(PHOTOS_URL+term,{
                 headers: {
-                    "Authorization": "563492ad6f91700001000001b60383de75c947308a5e1ba73b4f9683"
+                    "Authorization": "<api key>"
                 }
             }).then(res => res.json())
             .then(result => setPhotos(result));
     
             fetch(VIDEOS_URL+term, {
                 headers: {
-                    "Authorization": "563492ad6f91700001000001b60383de75c947308a5e1ba73b4f9683"
+                    "Authorization": "<api key>"
                 }
             }).then(res => res.json())
             .then(result => setVideos(result));    
